@@ -1,0 +1,38 @@
+/* pages/infolist/infolist.wxss */
+
+.header {
+  padding: 20rpx;
+  text-align: center;
+}
+
+.title {
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20rpx;
+  border: 1rpx solid #ccc;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.header-row {
+  background-color: #f0f0f0;
+}
+
+.cell {
+  flex: 1;
+  padding: 10rpx;
+  text-align: center;
+}
+
+.btn{
+  width: 1px !important;
+  height: 10px;
+  font-size: 18px;
+}

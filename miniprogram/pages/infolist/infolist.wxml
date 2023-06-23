@@ -1,0 +1,19 @@
+<!--pages/infolist/infolist.wxml-->
+<view class="table">
+    <!-- 表头 -->
+    <view class="row header-row">
+      <view class="cell" style="display: none;">111</view>
+      <view class="cell">日期</view>
+      <view class="cell">体重</view>
+      <view class="cell">食物</view>
+      <view class="cell">操作</view>
+    </view>
+    <!-- 表格内容 -->
+    <view class="row" wx:for="{{infoObject}}" wx:key="index">
+      <view class="cell" style="display: none;">{{item._id}}</view>
+      <view class="cell">{{item.date}}</view>
+      <view class="cell">{{item.weight}}</view>
+      <view class="cell">{{item.context}}</view>
+      <view class="cell"><button class="btn" data-index="{{item._id}}" bindtap="handleButtonClick">按钮</button></view>
+    </view>
+  </view>

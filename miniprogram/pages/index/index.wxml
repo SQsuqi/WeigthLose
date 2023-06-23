@@ -1,0 +1,23 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="form-group">
+      <text>日期：</text>
+      <input type="text" name="date" placeholder="请输入日期" />
+    </view>
+    <view class="form-group">
+      <text>食物：</text>
+      <input type="text" name="context" placeholder="请输入" />
+    </view>
+    <view class="form-group">
+      <text>当前体重：</text>
+      <textarea name="weight" placeholder="请输入当前体重"></textarea>
+    </view>
+    <button form-type="submit">提交</button>
+  </form>
+
+  <button bindtap="selectInfo">获取</button>
+  
+
+  <button bindtap="getInfo">查看详情</button>
+</view>
+

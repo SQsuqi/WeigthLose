@@ -1,0 +1,1 @@
+"D:\Tools\Tencent\WechatWebTools\cli.bat" cloud functions deploy --e maindata-3geggmkt0912ff67 --n quickstartFunctions --r --project "C:\Users\suqi\Documents\WeChatProjects\WeigthLose" --report_first --report

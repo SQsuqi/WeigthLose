@@ -1,0 +1,25 @@
+/**index.wxss**/
+.container {
+  max-width: 400rpx;
+  margin: 0 auto;
+  padding: 20rpx;
+}
+
+.form-group {
+  margin-bottom: 20rpx;
+}
+
+text {
+  display: inline-block;
+}
+
+input,
+textarea {
+  width: 400rpx;
+  height: 80rpx;
+  padding: 10rpx;
+  border: 1rpx solid #ccc;
+}
+
+
+
