@@ -1,5 +1,10 @@
 <!--pages/recording/recording.wxml-->
 <view class="recording-mian">
+  <van-cell title="选择单个日期" value="{{ date }}" bind:click="onDisplay" />
+  <van-calendar show="{{ showDate }}" bind:close="onCloseDate" bind:confirm="onConfirm" />
+
+
+
   <van-cell-group inset custom-class="recording-list">
       <van-cell title="早餐" value="150卡" title-class="cell-title"/>
       <van-cell title="米饭" value="100卡" label="1晚" border="{{ false }}" />

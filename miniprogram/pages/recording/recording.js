@@ -5,11 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date:"加餐",
+    date:"",
     //弹出层
-    show: false
+    show: false,
+    showDate:false
   },
 
+  onDisplay() {
+    this.setData({ showDate: true });
+  },
+
+  onCloseDate() {
+    this.setData({ showDate: false });
+  },
+
+  formatDate(date) {
+    date = new Date(date);
+    return `${date.getMonth() + 1}/${date.getDate()}`;
+  },
+
+  onConfirm(event) {
+    this.setData({
+      showDate: false,
+      date: this.formatDate(event.detail),
+    });
+  },
 
   onChange(event) {
     // event.detail 为当前输入的值

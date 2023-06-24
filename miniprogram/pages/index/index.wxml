@@ -16,9 +16,6 @@
   </form>
 
   <button bindtap="selectInfo">获取</button>
-  <van-button type="primary">主要按钮</van-button>
- 
-
   <button bindtap="getInfo">查看详情</button>
 </view>
 
