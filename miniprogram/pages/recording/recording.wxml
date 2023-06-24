@@ -1,0 +1,63 @@
+<!--pages/recording/recording.wxml-->
+<view class="recording-mian">
+  <van-cell-group inset custom-class="recording-list">
+      <van-cell title="早餐" value="150卡" title-class="cell-title"/>
+      <van-cell title="米饭" value="100卡" label="1晚" border="{{ false }}" />
+      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
+  </van-cell-group>
+
+  <van-cell-group inset custom-class="recording-list">
+      <van-cell title="中餐" value="150卡" title-class="cell-title"/>
+      <van-cell title="米饭" value="{{ date }}" label="1晚" border="{{ false }}" />
+      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
+  </van-cell-group>
+
+  <van-cell-group inset custom-class="recording-list">
+      <van-cell title="晚餐" value="150卡" title-class="cell-title"/>
+      <van-cell title="米饭" value="100卡" label="1晚" border="{{ false }}" />
+      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
+  </van-cell-group>
+
+  <van-cell-group inset custom-class="recording-list">
+      <van-cell title="加餐" value="150卡" title-class="cell-title">
+        <van-icon slot="right-icon" name="add-square" class="custom-icon" color="red" size="1.5rem"  bind:click="showPopup"/>
+      </van-cell>
+      <van-cell title="米饭" value="100卡" label="1晚" border="{{ false }}" />
+      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
+  </van-cell-group>
+
+  <van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height:50%"
+  bind:close="onClose"
+  >
+  <van-cell-group>
+    <van-field
+      label="名称"
+      placeholder="请输入食物名称"
+      border="{{ false }}"
+      bind:change="onChange"
+    />
+    <van-field
+      label="数量"
+      placeholder="请输入食物数量"
+      border="{{ false }}"
+      bind:change="onChange"
+    />
+    <van-field
+      label="热量"
+      placeholder="请输入食物热量"
+      border="{{ false }}"
+      bind:change="onChange"
+    />
+    <view style="display: flex;justify-content: center;padding-top: 10px;">
+      <van-button type="primary" size="small">添加</van-button>
+        
+      <van-button type="primary" size="small">取消</van-button>
+    </view>
+    
+    </van-cell-group>
+  </van-popup>
+</view>

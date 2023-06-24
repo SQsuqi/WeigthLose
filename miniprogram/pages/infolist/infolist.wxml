@@ -1,5 +1,5 @@
 <!--pages/infolist/infolist.wxml-->
-<view class="table">
+<view class="table" style="background-color: #f1f0f5;height: 100rem;">
     <!-- 表头 -->
     <view class="row header-row">
       <view class="cell" style="display: none;">111</view>
@@ -16,4 +16,7 @@
       <view class="cell">{{item.context}}</view>
       <view class="cell"><button class="btn" data-index="{{item._id}}" bindtap="handleButtonClick">按钮</button></view>
     </view>
+    
   </view>
+
+

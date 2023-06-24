@@ -1,8 +1,24 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/infolist/infolist"
+    "pages/infolist/infolist",
+    "pages/recording/recording"
   ],
+  "tabBar": {
+    "color": "#707070", 
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/recording/recording",
+        "text": "记录"
+      }
+    ]
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
@@ -10,6 +26,5 @@
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }
