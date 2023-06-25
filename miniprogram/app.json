@@ -2,10 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/infolist/infolist",
-    "pages/recording/recording"
+    "pages/recording/recording",
+    "pages/addRecording/addRecording"
   ],
   "tabBar": {
-    "color": "#707070", 
+    "color": "#707070",
     "selectedColor": "#1296db",
     "borderStyle": "white",
     "list": [

@@ -1,0 +1,17 @@
+<!--pages/addRecording.wxml-->
+<view class="add">
+  <form bindsubmit="formSubmit">
+    <van-cell-group>
+      <van-field
+        label="食品名称"
+        placeholder="请输入食品名称"
+        border="{{ false }}"
+        name="name"
+        bind:change="onChange"
+      />
+    </van-cell-group>
+    <view class="btn-container">
+      <van-button custom-class="btnadd" color="pink" form-type="submit" block>添加</van-button>
+    </view>
+  </form>
+</view>

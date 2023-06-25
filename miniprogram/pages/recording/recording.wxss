@@ -1,7 +1,6 @@
 /* pages/recording/recording.wxss */
 .recording-mian{
   background-color: #f1f0f5;
-  box-sizing: border-box;
 }
 
 .recording-list {

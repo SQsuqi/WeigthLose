@@ -1,68 +1,38 @@
 <!--pages/recording/recording.wxml-->
 <view class="recording-mian">
-  <van-cell title="选择单个日期" value="{{ date }}" bind:click="onDisplay" />
-  <van-calendar show="{{ showDate }}" bind:close="onCloseDate" bind:confirm="onConfirm" />
+  <van-cell title="选择日期" value="{{ date }}" bind:click="onDisplay" />
+  <van-calendar show="{{ showDate }}" bind:close="onCloseDate" bind:confirm="onConfirm" minDate="{{minDate}}" maxDate="{{ maxDate }}"/>
 
+  <view wx:for="{{ infoObject }}" wx:key="_id"> 
 
-
-  <van-cell-group inset custom-class="recording-list">
-      <van-cell title="早餐" value="150卡" title-class="cell-title"/>
-      <van-cell title="米饭" value="100卡" label="1晚" border="{{ false }}" />
-      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
-  </van-cell-group>
-
-  <van-cell-group inset custom-class="recording-list">
-      <van-cell title="中餐" value="150卡" title-class="cell-title"/>
-      <van-cell title="米饭" value="{{ date }}" label="1晚" border="{{ false }}" />
-      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
-  </van-cell-group>
-
-  <van-cell-group inset custom-class="recording-list">
-      <van-cell title="晚餐" value="150卡" title-class="cell-title"/>
-      <van-cell title="米饭" value="100卡" label="1晚" border="{{ false }}" />
-      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
-  </van-cell-group>
-
-  <van-cell-group inset custom-class="recording-list">
-      <van-cell title="加餐" value="150卡" title-class="cell-title">
-        <van-icon slot="right-icon" name="add-square" class="custom-icon" color="red" size="1.5rem"  bind:click="showPopup"/>
-      </van-cell>
-      <van-cell title="米饭" value="100卡" label="1晚" border="{{ false }}" />
-      <van-cell title="牛奶" value="50卡" label="2瓶" border="{{ false }}" />
-  </van-cell-group>
-
-  <van-popup
-  show="{{ show }}"
-  round
-  position="bottom"
-  custom-style="height:50%"
-  bind:close="onClose"
-  >
-  <van-cell-group>
-    <van-field
-      label="名称"
-      placeholder="请输入食物名称"
-      border="{{ false }}"
-      bind:change="onChange"
-    />
-    <van-field
-      label="数量"
-      placeholder="请输入食物数量"
-      border="{{ false }}"
-      bind:change="onChange"
-    />
-    <van-field
-      label="热量"
-      placeholder="请输入食物热量"
-      border="{{ false }}"
-      bind:change="onChange"
-    />
-    <view style="display: flex;justify-content: center;padding-top: 10px;">
-      <van-button type="primary" size="small">添加</van-button>
-        
-      <van-button type="primary" size="small">取消</van-button>
-    </view>
-    
+    <van-cell-group inset custom-class="recording-list">
+      <van-cell title="早餐" value="" title-class="cell-title"/>
+      <view wx:for="{{ item.meals.breakfast }}" > 
+        <van-cell title="{{item}}" value="" label="" border="{{ false }}" />
+      </view>
     </van-cell-group>
-  </van-popup>
+
+    <van-cell-group inset custom-class="recording-list">
+      <van-cell title="中餐" value="" title-class="cell-title"/>
+      <view wx:for="{{ item.meals.dinner }}"> 
+        <van-cell title="{{item}}" value="" label="" border="{{ false }}" />
+      </view>
+    </van-cell-group> 
+
+    <van-cell-group inset custom-class="recording-list">
+      <van-cell title="晚餐" value="" title-class="cell-title"/>
+      <view wx:for="{{ item.meals.lunch }}"> 
+        <van-cell title="{{item}}" value="" label="" border="{{ false }}" />
+      </view>
+    </van-cell-group>
+
+    <van-cell-group inset custom-class="recording-list">
+      <van-cell title="加餐" value="" title-class="cell-title">
+        <van-icon slot="right-icon" name="add-square" class="custom-icon" color="red" size="1.5rem"  bind:click="jiacan"/>
+      </van-cell>
+      <view wx:for="{{ item.meals.snack }}"> 
+        <van-cell title="{{item}}" value="" label="" border="{{ false }}" />
+      </view>
+  </van-cell-group>
+  </view>
 </view>

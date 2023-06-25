@@ -16,6 +16,7 @@
   </form>
 
   <button bindtap="selectInfo">获取</button>
+  <button bindtap="getLogin">登录</button>
   <button bindtap="getInfo">查看详情</button>
 </view>
 

@@ -9,7 +9,18 @@ Page({
     infoObject : ""
   },
 
-  
+  getLogin(){
+    wx.cloud.callFunction({
+      name: 'getOpenId',
+      success: res =>{
+        console.log( res)
+      },
+      complete: res => {
+        console.log('callFunction test result: ', res)
+      }
+    })
+  },
+
   formSubmit: function (e) {
     var formData = e.detail.value;
     // 这里可以对表单数据进行处理或提交到服务器
