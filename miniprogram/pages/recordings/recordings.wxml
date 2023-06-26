@@ -1,0 +1,11 @@
+<!--pages/recordings/recordings.wxml-->
+
+<view class="recording-mian">
+  <van-cell-group inset custom-class="recording-list">
+    <van-cell title="餐食" value="" title-class="cell-title">
+      <van-icon slot="right-icon" name="add-square" class="custom-icon" color="red" size="1.5rem"  bind:click="canshi"/>
+    </van-cell>
+  </van-cell-group>
+</view>
+
+

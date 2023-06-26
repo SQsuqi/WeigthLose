@@ -1,0 +1,10 @@
+/* pages/recordings/recordings.wxss */
+.recording-mian{
+  background-color: #f1f0f5;
+  height: 100rem;
+}
+
+.recording-list {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
