@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/infolist/infolist",
     "pages/recording/recording",
-    "pages/addRecording/addRecording"
+    "pages/addRecording/addRecording",
+    "pages/recordings/recordings"
   ],
   "tabBar": {
     "color": "#707070",
@@ -15,7 +16,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/recording/recording",
+        "pagePath": "pages/recordings/recordings",
         "text": "记录"
       }
     ]

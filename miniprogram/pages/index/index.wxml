@@ -1,5 +1,5 @@
-<view class="container">
-  <form bindsubmit="formSubmit">
+<view class="container" style="display: none;">
+  <form bindsubmit="formSubmit" >
     <view class="form-group">
       <text>日期：</text>
       <input type="text" name="date" placeholder="请输入日期" />
@@ -18,5 +18,7 @@
   <button bindtap="selectInfo">获取</button>
   <button bindtap="getLogin">登录</button>
   <button bindtap="getInfo">查看详情</button>
+
 </view>
+<van-steps custom-class='index-steps' steps="{{ steps }}" active="{{ active }}"  direction="vertical"/>
 

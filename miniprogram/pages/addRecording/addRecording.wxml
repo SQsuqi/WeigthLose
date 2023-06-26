@@ -8,10 +8,13 @@
         border="{{ false }}"
         name="name"
         bind:change="onChange"
+        model:value="{{ value }}"
+        clearable="true"
       />
     </van-cell-group>
     <view class="btn-container">
-      <van-button custom-class="btnadd" color="pink" form-type="submit" block>添加</van-button>
+      <van-button custom-class="btnadd" color="red" form-type="submit" block>添加</van-button>
     </view>
+    <van-toast id="van-toast" />
   </form>
 </view>

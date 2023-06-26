@@ -21,5 +21,10 @@ textarea {
   border: 1rpx solid #ccc;
 }
 
+.index-steps{
+  padding-top: 2rem;
+  width: 200px;
+  height: 100rem;
+}
 
 

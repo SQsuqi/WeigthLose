@@ -6,7 +6,63 @@ Page({
    * 页面的初始数据
    */
   data: {
-    infoObject : ""
+    infoObject : "",
+    steps: [
+      {
+        text: '基础展示',
+        desc: '展示记录',
+      },
+      {
+        text: '对于某一天的展示',
+        desc: '判断是否存在',
+      },
+      {
+        text: '2022年6月26日',
+        desc: '修改操作',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+      {
+        text: '未完待续',
+        desc: '',
+      },
+
+    ],
+    active:2
   },
 
   getLogin(){
